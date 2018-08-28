@@ -353,6 +353,7 @@ def rendered_view(view, info):
     # one way or another this wrapper must produce a Response (unless
     # the renderer is a NullRendererHelper)
     renderer = info.options.get('renderer')
+    #assert renderer
     if renderer is None:
         # register a default renderer if you want super-dynamic
         # rendering.  registering a default renderer will also allow
