@@ -330,8 +330,7 @@ class DottedNameResolver(Resolver):
         """ package.module:attr style """
         if value.startswith(('.', ':')):
             if not package:
-                raise ValueError(
-                    'relative name %r irresolveable without package' % (value,)
+                raise ValueError('relative name %r irresolveable without package' % (value,)
                     )
             if value in ['.', ':']:
                 value = package.__name__
