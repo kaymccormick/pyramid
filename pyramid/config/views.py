@@ -723,6 +723,7 @@ class ViewsConfiguratorMixin(object):
           predicate to match as true.  For example: ``physical_path='/'`` or
           ``physical_path='/a/b/c'`` or ``physical_path=('', 'a', 'b', 'c')``.
           This is not a path prefix match or a regex, it's a whole-path match.
+          This is not a path prefix match or a regex, it's a whole-path match.
           It's useful when you want to always potentially show a view when some
           object is traversed to, but you can't be sure about what kind of
           object it will be, so you can't use the ``context`` predicate.  The
